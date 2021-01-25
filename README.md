@@ -1,6 +1,13 @@
 # Starbucks_shopping_app
 
-![image](https://user-images.githubusercontent.com/48292190/105739455-78f6fa00-5f7b-11eb-9142-3d9fac542171.png)
+- [Update] 모달 추가
+  ![image](https://user-images.githubusercontent.com/48292190/105744176-15230000-5f80-11eb-89d0-f2e2cdf24ef8.png)
+
+- [Update] 버튼&기능 추가
+  ![image](https://user-images.githubusercontent.com/48292190/105743400-ddb45380-5f7f-11eb-8dcf-916649ee5882.png)
+
+- 초기 모델
+  ![image](https://user-images.githubusercontent.com/48292190/105739455-78f6fa00-5f7b-11eb-9142-3d9fac542171.png)
 
 <table>
   <tr>
