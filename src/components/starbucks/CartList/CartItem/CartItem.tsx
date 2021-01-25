@@ -11,7 +11,7 @@ const CartItem = ({ id, product_name, price }: StarbucksItem) => {
     <>
       <div className="CartItem" onClick={() => handleClick(id)}>
         <Subtitle1>{product_name}</Subtitle1>
-        <Body1>{price}</Body1>
+        <Body1 color="green">{price}</Body1>
       </div>
     </>
   );
