@@ -5,6 +5,8 @@ import { RootState } from 'modules';
 
 export default function useCart() {
   const cart = useSelector((state: RootState) => state.starbucks);
+  let total = 0;
+  cart.forEach((item) => (total += Number(item.price)));
   const cartList = cart.map((item) => (
     <CartItem
       id={item.id}
@@ -12,5 +14,5 @@ export default function useCart() {
       price={item.price}
     />
   ));
-  return { cartList };
+  return { cartList, total };
 }

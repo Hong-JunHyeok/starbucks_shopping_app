@@ -2,8 +2,9 @@
   background-color: #00b79d;
   width: 500px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  height: 300px;
+  overflow-y: auto;
   flex-direction: column;
   padding: 1rem;
 }

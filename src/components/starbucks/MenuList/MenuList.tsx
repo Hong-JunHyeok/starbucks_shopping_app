@@ -9,14 +9,29 @@ const menuList = [
   {
     product_name: '블랙 그레이즈드 라떼',
     id: 1,
-    img: 'assets/starbucks.png',
+
     price: '6.1',
   },
   {
     product_name: '스타벅스 몰체 라떼',
     id: 2,
-    img: 'assets/starbucks.png',
+
     price: '5.6',
+  },
+  {
+    product_name: '카페모카',
+    id: 3,
+    price: '4.6',
+  },
+  {
+    product_name: '카페 아메리카노',
+    id: 4,
+    price: '4.1',
+  },
+  {
+    product_name: '시그니쳐 초콜렛',
+    id: 5,
+    price: '5.3',
   },
 ];
 

@@ -5,7 +5,7 @@ import { Body1, Subtitle1 } from '@class101/ui';
 import useAddCart from 'hooks/useAddCart';
 
 const MenuItem = ({ id, product_name, price }: StarbucksItem) => {
-  const onAddCart = useAddCart(id, product_name, price);
+  const onAddCart = useAddCart(product_name, price);
   const handleClick = (id: number) => {
     console.log(id);
     onAddCart();

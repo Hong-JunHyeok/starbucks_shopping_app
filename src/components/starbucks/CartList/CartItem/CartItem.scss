@@ -2,4 +2,10 @@
 
 .CartItem {
   font-family: 'Nanum Pen Script', cursive;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  &-icon {
+    cursor: pointer;
+  }
 }

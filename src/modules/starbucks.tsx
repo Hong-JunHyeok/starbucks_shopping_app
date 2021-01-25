@@ -3,11 +3,12 @@ const ADD_CART = 'starbucks/ADD_CART' as const;
 const REMOVE_CART = 'starbucks/REMOVE_CART' as const;
 
 //action creator
-export const addCart = (id: number, product_name: string, price: string) => ({
+let id = 0;
+export const addCart = (product_name: string, price: string) => ({
   type: ADD_CART,
   payload: [
     {
-      id,
+      id: id++,
       product_name,
       price,
     },
