@@ -1,14 +1,19 @@
-import React from "react";
-import "./MenuItem.scss";
+import './MenuItem.scss';
+import starbucks from 'assets/starbucks.png';
+import { StarbucksItem } from 'modules/starbucks';
+import { Body1, Subtitle1 } from '@class101/ui';
 
-interface MenuItemProps {
-
-}
-
-const MenuItem = ({}: MenuItemProps) => {
+const MenuItem = ({ id, product_name, price }: StarbucksItem) => {
+  const handleClick = (id: number) => {
+    console.log(id);
+  };
   return (
     <>
-      <div></div>
+      <div className="MenuItem" onClick={() => handleClick(id)}>
+        <img src={starbucks} alt="icon" />
+        <Subtitle1>{product_name}</Subtitle1>
+        <Body1>{price}</Body1>
+      </div>
     </>
   );
 };

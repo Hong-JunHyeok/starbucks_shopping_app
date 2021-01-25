@@ -1,27 +1,15 @@
 import { Caption1, GridList, Subtitle1 } from '@class101/ui';
 import React from 'react';
-import useCart from 'hooks/useCart';
+import MenuList from 'components/starbucks/MenuList';
+import CartList from './starbucks/CartList';
 
 function App() {
-  const { cart } = useCart();
-  console.log(cart);
-
-  return <></>;
+  return (
+    <>
+      <MenuList />
+      <CartList />
+    </>
+  );
 }
 
 export default App;
-
-// [
-//   {
-//     product_name: '블랙 그레이즈드 라떼',
-//     id: 1,
-//     img: 'assets/starbucks.png',
-//     price: '6.1',
-//   },
-//   {
-//     product_name: '스타벅스 몰체 라떼',
-//     id: 2,
-//     img: 'assets/starbucks.png',
-//     price: '5.6',
-//   },
-// ]

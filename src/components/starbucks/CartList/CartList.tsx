@@ -1,14 +1,13 @@
-import React from "react";
-import "./CartList.scss";
+import useCart from 'hooks/useCart';
+import './CartList.scss';
 
-interface CartListProps {
-
-}
+interface CartListProps {}
 
 const CartList = ({}: CartListProps) => {
+  const { cartList } = useCart();
   return (
     <>
-      <div></div>
+      <div className="CartList">{cartList}</div>
     </>
   );
 };

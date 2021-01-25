@@ -1,1 +1,22 @@
-/* your css code */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+.MenuItem {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Nanum Pen Script', cursive;
+  align-items: center;
+  cursor: pointer;
+  transition: ease-in-out 0.1s;
+  padding: 1rem;
+  &:hover {
+    background-color: #0d7f6e;
+  }
+  img {
+    width: 20px;
+    user-select: none;
+  }
+  &-price {
+    font-size: 200px;
+  }
+}

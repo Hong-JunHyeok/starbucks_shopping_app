@@ -32,7 +32,13 @@ export type StarbucksItem = {
 
 export type StarbucksItems = StarbucksItem[];
 
-const initialState: StarbucksItems = [];
+const initialState: StarbucksItems = [
+  {
+    id: 3,
+    product_name: '민초라떼',
+    price: '1.3',
+  },
+];
 
 //reducer
 export default function starbucks(

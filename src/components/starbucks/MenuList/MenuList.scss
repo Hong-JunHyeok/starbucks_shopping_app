@@ -1,1 +1,9 @@
-/* your css code */
+.MenuList {
+  background-color: #00b79d;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}

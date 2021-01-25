@@ -1,14 +1,18 @@
-import React from "react";
-import "./CartItem.scss";
+import React from 'react';
+import './CartItem.scss';
+import { StarbucksItem } from 'modules/starbucks';
+import { Body1, Subtitle1 } from '@class101/ui';
 
-interface CartItemProps {
-
-}
-
-const CartItem = ({}: CartItemProps) => {
+const CartItem = ({ id, product_name, price }: StarbucksItem) => {
+  const handleClick = (id: number) => {
+    console.log(id);
+  };
   return (
     <>
-      <div></div>
+      <div className="CartItem" onClick={() => handleClick(id)}>
+        <Subtitle1>{product_name}</Subtitle1>
+        <Body1>{price}</Body1>
+      </div>
     </>
   );
 };
