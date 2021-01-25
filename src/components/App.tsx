@@ -1,7 +1,11 @@
 import { Caption1, GridList, Subtitle1 } from '@class101/ui';
 import React from 'react';
+import useCart from 'hooks/useCart';
 
 function App() {
+  const { cart } = useCart();
+  console.log(cart);
+
   return <></>;
 }
 
