@@ -41,7 +41,7 @@ export default function starbucks(
 ) {
   switch (action.type) {
     case ADD_CART:
-      return state.concat(...state, action.payload);
+      return state.concat(action.payload);
     case REMOVE_CART:
       return state.filter((item) => item.id !== action.payload);
     default:
